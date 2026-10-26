@@ -1,0 +1,984 @@
+[
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/bitmap.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "bitmap.o",
+      "bitmap.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/block_dev.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "block_dev.o",
+      "block_dev.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/buffer.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "buffer.o",
+      "buffer.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/char_dev.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "char_dev.o",
+      "char_dev.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/exec.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "exec.o",
+      "exec.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/fcntl.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "fcntl.o",
+      "fcntl.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/file_dev.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "file_dev.o",
+      "file_dev.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/file_table.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "file_table.o",
+      "file_table.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/inode.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "inode.o",
+      "inode.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/ioctl.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "ioctl.o",
+      "ioctl.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/namei.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "namei.o",
+      "namei.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/open.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "open.o",
+      "open.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/pipe.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "pipe.o",
+      "pipe.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/read_write.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "read_write.o",
+      "read_write.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/stat.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "stat.o",
+      "stat.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/super.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "super.o",
+      "super.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/fs/truncate.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "truncate.o",
+      "truncate.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/init/main.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-nostdinc",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "init/main.o",
+      "init/main.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv/floppy.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "floppy.o",
+      "floppy.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv/hd.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "hd.o",
+      "hd.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv/ll_rw_blk.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "ll_rw_blk.o",
+      "ll_rw_blk.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/blk_drv/ramdisk.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "ramdisk.o",
+      "ramdisk.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv/console.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "console.o",
+      "console.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv/serial.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "serial.o",
+      "serial.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv/tty_io.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "tty_io.o",
+      "tty_io.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/chr_drv/tty_ioctl.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "tty_ioctl.o",
+      "tty_ioctl.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/exit.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "exit.o",
+      "exit.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/fork.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "fork.o",
+      "fork.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/math",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/math/math_emulate.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../../include",
+      "-c",
+      "-o",
+      "math_emulate.o",
+      "math_emulate.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/mktime.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "mktime.o",
+      "mktime.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/panic.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "panic.o",
+      "panic.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/printk.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "printk.o",
+      "printk.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/sched.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "sched.o",
+      "sched.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/signal.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "signal.o",
+      "signal.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/sys.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "sys.o",
+      "sys.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/traps.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "traps.o",
+      "traps.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/kernel/vsprintf.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "vsprintf.o",
+      "vsprintf.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/_exit.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "_exit.o",
+      "_exit.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/close.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "close.o",
+      "close.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/ctype.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "ctype.o",
+      "ctype.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/dup.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "dup.o",
+      "dup.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/errno.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "errno.o",
+      "errno.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/execve.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "execve.o",
+      "execve.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/malloc.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "malloc.o",
+      "malloc.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/open.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "open.o",
+      "open.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/setsid.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "setsid.o",
+      "setsid.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/string.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "string.o",
+      "string.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/wait.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "wait.o",
+      "wait.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/lib/write.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-Wall",
+      "-O",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "write.o",
+      "write.c"
+    ]
+  },
+  {
+    "directory": "/Users/yl/Downloads/高级操作系统/linux-0.11/mm",
+    "file": "/Users/yl/Downloads/高级操作系统/linux-0.11/mm/memory.c",
+    "arguments": [
+      "/opt/homebrew/opt/llvm/bin/clang",
+      "--target=i386-unknown-linux-gnu",
+      "-std=gnu89",
+      "-ffreestanding",
+      "-O",
+      "-Wall",
+      "-fomit-frame-pointer",
+      "-finline-functions",
+      "-nostdinc",
+      "-I../include",
+      "-c",
+      "-o",
+      "memory.o",
+      "memory.c"
+    ]
+  }
+]
