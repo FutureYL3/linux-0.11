@@ -1,0 +1,2 @@
+Diagnostics:
+  Suppress: [error_inoutput_conflict_with_clobber]
