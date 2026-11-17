@@ -1,2 +1,2 @@
 Diagnostics:
-  Suppress: [error_inoutput_conflict_with_clobber]
+  Suppress: [error_inoutput_conflict_with_clobber, static_non_static]
