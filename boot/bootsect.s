@@ -111,8 +111,8 @@ ok_load_setup:
 
 	mov	ax,#SYSSEG
 	mov	es,ax		! segment of 0x010000
-	call	read_it
-	call	kill_motor
+	call	read_it ! 将内核从软盘中加载到内存地址 SYSSEG 0x10000 处
+	call	kill_motor ! 关闭软盘驱动器马达
 
 ! After that we check which root-device to use. If the device is
 ! defined (!= 0), nothing is done and the given device is used.

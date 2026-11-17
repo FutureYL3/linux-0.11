@@ -106,18 +106,20 @@ is_disk1:
 
 ! =========== 此处结束从主板上的属于 bios 的一个内存存储芯片里读机器系统数据 ==============
 
-! now we want to move to protected mode ...
+! now we want to move to protected mode ...从实模式转移到保护模式
 	! cli - clear interrupt：关中断
 	cli			! no interrupts allowed !
 
 ! first we move the system to it's rightful place
+! 实模式低地址原来放着中断向量表，所以 bootsect 只能先把内核放在 0x10000。中断已经关掉、马上要离开实模式，这块内存可以覆盖了。
 
 	mov	ax,#0x0000
 	cld			! 'direction'=0, movs moves forward
 do_move:
+	! 0x10000–0x8FFFF 搬到 0x00000–0x7FFFF
 	mov	es,ax		! destination segment
 	add	ax,#0x1000
-	cmp	ax,#0x9000
+	cmp	ax,#0x9000 ! AX 加到 0x9000 就停止，0x90000 处的 BIOS 参数和正在执行的 setup 保持不动。
 	jz	end_move
 	mov	ds,ax		! source segment
 	sub	di,di
@@ -136,6 +138,14 @@ end_move:
 	lgdt	gdt_48		! load gdt with whatever appropriate
 
 ! that was painless, now we enable A20
+!
+! 打开 A20。8086 只有 A0–A19，超过 1 MB 时这一位会丢掉，部分旧程序
+! 依赖这种回绕。80286 以后只给 A20 加了门：门关上时该位被强制为 0，0x100000 与
+! 0x000000 重合。A21–A31 没有这种门，直接连到地址总线，不用再打开
+!
+! 门由键盘控制器 8042 的输出端口第 1 位控制。0x64 是命令口，0x60 是数据口。
+! empty_8042 读 0x64，等到输入缓冲为空才能写。0xD1 表示下一字节写入输出端口；
+! 0xDF 的第 1 位为 1，打开放行 A20，第 0 位为 1，避免把 CPU 复位
 
 	call	empty_8042
 	mov	al,#0xD1		! command write
@@ -204,23 +214,44 @@ empty_8042:
 	jnz	empty_8042	! yes - loop
 	ret
 
+! GDT 表项的格式：
+! 字节	 		     	 字段
+! 0–1				段界限的低 16 位
+! 2–4				段基址的低 24 位
+! 5					访问权限
+! 6 的低 4 位		 段界限的高 4 位
+! 6 的高 4 位		 G、D/B、L、AVL
+! 7					段基址的高 8 位
+
 gdt:
+	! ，GDT 表第一项，空项
 	.word	0,0,0,0		! dummy
 
+	! ，GDT 表第二项，内核代码段描述符
 	.word	0x07FF		! 8Mb - limit=2047 (2048*4096=8Mb)
 	.word	0x0000		! base address=0
 	.word	0x9A00		! code read/exec
 	.word	0x00C0		! granularity=4096, 386
 
+	! ，GDT 表第三项，内核数据段描述符
 	.word	0x07FF		! 8Mb - limit=2047 (2048*4096=8Mb)
 	.word	0x0000		! base address=0
 	.word	0x9200		! data read/write
 	.word	0x00C0		! granularity=4096, 386
 
+! idtr 和 gdtr 是 Intel 80386 的寄存器，用于存储 IDT 和 GDT 的基址和界限，都是 48 位寄存器。
+! idtr 和 gdtr 的格式是：
+	! 字节 0-1：界限，即每张表的最大内存字节数，实际项数为界限/8（即 IDT 表和 GDT 表每项占 8 字节）
+	! 字节 2-5：基址，即每张表的起始物理地址
+
+! idt_48 的基址和界限都是 0，
+! IDTR 因此指向地址 0，表面这张表没有可用项。真正的 IDT 要到 head.s 里再建立，并重新执行 lidt
 idt_48:
 	.word	0			! idt limit=0
 	.word	0,0			! idt base=0L
 
+! gdt_48 的基址指向标签 gdt 所在的物理地址
+! 界限是 2048 (0x800)，表示 256 个 GDT 项，即 256 * 8 = 2048 字节
 gdt_48:
 	.word	0x800		! gdt limit=2048, 256 GDT entries
 	.word	512+gdt,0x9	! gdt base = 0X9xxxx
