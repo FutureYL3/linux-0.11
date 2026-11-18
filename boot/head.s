@@ -15,11 +15,17 @@
 .globl _idt,_gdt,_pg_dir,_tmp_floppy_area
 _pg_dir:
 startup_32:
+	! 保护模式下段寄存器里放的是段选择子，CPU 用它去 GDT 取描述符，地址按描述符里的基址加偏移计算，不再把段寄存器的值左移 4 位
+	! 这里将各个 DS、ES、FS、GS 段寄存器的值设置为段选择子 0x10，即 setup.s 中设置的 GDT 中的数据段描述符
 	movl $0x10,%eax
 	mov %ax,%ds
 	mov %ax,%es
 	mov %ax,%fs
 	mov %ax,%gs
+	! lss 从内存里取出一个远指针，同时装入 SS 和指定的偏移寄存器
+	! stack_start 的结构体定义为 { long * a = user_stack + PAGE_SIZE>>2; short b = 0x10; }，a 是远指针，b 是段选择子
+	! 这里将 stack_start 的 long * a 指针装入 ESP，同时将 SS 设置为段选择子 0x10
+	! 这行用的 user_stack 只是启动时的临时栈，名字指的是它后来会变成任务 0 的用户态栈，而不是进程自己的内核栈
 	lss _stack_start,%esp
 	call setup_idt
 	call setup_gdt
